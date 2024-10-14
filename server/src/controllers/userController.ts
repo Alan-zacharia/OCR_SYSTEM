@@ -55,10 +55,9 @@ const parseOCRData = (extractedTexts: String): any => {
 
     cleanAddress = [...new Set(places)].join(", ");
   }
-
   return {
     Name: nameMatch ? nameMatch[1].trim() : "N/A",
-    DOB: dobMatch ? dobMatch[1].trim() : "N/A",
+    DOB: dobMatch ? dobMatch[1].trim() : "N/A", 
     Gender: genderMatch ? genderMatch[0].trim().toUpperCase() : "N/A",
     UID: uidMatch ? uidMatch[0].replace(/\s/g, "").trim() : "N/A",
     address: cleanAddress,
