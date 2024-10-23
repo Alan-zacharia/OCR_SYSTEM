@@ -1,15 +1,17 @@
 import React from "react";
-import UploadForm from "./components/UploadForm";
-import DataVisualizer from "./components/DataVisualizer";
-import {  Toaster } from "react-hot-toast";
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import PageNotFound from "./components/PageNotFound";
 
 const App = () => {
   return (
-    <main className=" text-green-500  h-screen bg-gray-100 flex justify-around ">
-      <Toaster/>
-      <UploadForm />
-      <DataVisualizer />
-    </main>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="*" element={<PageNotFound />} />
+      </Routes>
+    </Router>
   );
 };
 

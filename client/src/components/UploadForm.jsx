@@ -54,7 +54,7 @@ const UploadForm = () => {
     }
   };
   return (
-    <section className=" m-12 pt-10 bg-gray-100  w-full">
+    <section className="m-2 lg:m-12 pt-10 bg-gray-100   lg:w-full">
       <form className="text-black flex flex-col gap-10">
         <div>
           <label htmlFor="file" className="font-bold text-base">
@@ -130,7 +130,7 @@ const UploadForm = () => {
         </div>
         <div>
           <button
-            className="relative flex items-center justify-center px-48 w-full p-4 font-bold rounded-lg text-sm bg-blue-500 text-white hover:bg-blue-600 "
+            className="relative flex items-center justify-center pz-20 lg:px-48 w-full p-4 font-bold rounded-lg text-sm bg-blue-500 text-white hover:bg-blue-600 "
             onClick={handleUpload}
             disabled={loading}
           >
