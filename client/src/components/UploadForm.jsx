@@ -45,10 +45,9 @@ const UploadForm = () => {
           "Content-Type": "multipart/form-data",
         },
       });
-      console.log(res.data.extractedData);
       dispatch({ type: "SET_DATA", payload: res.data.data });
     } catch (error) {
-      alert(error);
+      toast.error("Something went wrong");
     } finally {
       setLoading(false);
     }
