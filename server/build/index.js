@@ -12,7 +12,7 @@ const app = (0, express_1.default)();
 app.use(express_1.default.json());
 app.use((0, cors_1.default)({
     credentials: true,
-    origin: "http://localhost:3000",
+    origin: envConfig_1.default.CLIENT_URL,
 }));
 app.use((0, morgan_1.default)("dev"));
 app.use("/api/", userRouter_1.default);

@@ -27,5 +27,6 @@ const dotenv = __importStar(require("dotenv"));
 dotenv.config();
 const envConfig = {
     PORT: process.env.PORT || 3000,
+    CLIENT_URL: process.env.CLIENT_URL,
 };
 exports.default = envConfig;
