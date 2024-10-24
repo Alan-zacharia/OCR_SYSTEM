@@ -69,4 +69,4 @@ This is an Aadhaar OCR (Optical Character Recognition) system built with a Node.
    ```
 
 ## Live Demo
-- 
+- https://ocr-system.vercel.app/
